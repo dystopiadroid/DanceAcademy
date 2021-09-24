@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: none;
+}
+body::before{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    z-index: -2;
+}
+/* NAVBAR ----------------------------------------------------------------------------------------*/
+
+#navbar::before{
+    content: "";
+    background-color: #1d0901;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar{
+    position: relative;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 60px;
+}
+ul li{
+    list-style: none;
+    padding: 21px 45px;
+}
+ul li a{
+    text-decoration: none;
+    color: #cdc7c7;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    padding: 15px 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+a:hover{
+    /* text-shadow: 3px 1px 15px white; */
+    text-shadow: 1px 1px 1px white;
+    color: #8b6e54;
+}
+#logo{
+    mix-blend-mode:multiply;
+    position: relative;
+    right: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 50px;
+    width: 70px;
+}
+#imgTitle{
+    font-size: 1.3rem;
+}
+
+/*------------------------------------------------------------------------------------------------- */
+
+/* INTRO------------------------------------------------------------------------------------------- */
+
+#intro::before{
+    content: "";
+    background: url(/static/intro_bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    opacity: 0.8;
+    z-index: -1;
+    border: 2px solid #481e13;
+    border-radius: 10px;
+    box-shadow: 6px 6px 32px #592a16;
+}
+#intro{
+    height: 750px;
+    font-size: 70px;
+    color: #8b6e54;
+    text-transform: uppercase;
+    font-family: 'Ultra', serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 95px;
+}
+#variation{
+    font-family: 'Stint Ultra Expanded', cursive;
+    letter-spacing: 0.1em;
+    font-size: 48px;
+}
+#intro div{
+    padding: 10px 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* MISSION----------------------------------------------------------------------------------------- */
+
+#mission{
+    position: relative;
+    height: 450px;
+}
+#mission::before{
+    content: "";
+    position: absolute;
+    background-color: #dd9a73;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+
+}
+#missionTitle{
+    position: relative;
+    font-weight: bold;
+    color: #781209;
+    top: 10px;
+    text-align: center;
+    font-size: 2.5em;
+}
+.container{
+    display: flex;
+    margin: 37px 64px;
+    justify-content: center;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #972925;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+    border-radius: 15px;
+    z-index: -1;
+}
+.card{
+    margin: 5px 30px;
+    font-size: 1.1em;
+    color: black;
+    position: relative;
+    padding: 20px 40px;
+    height: 270px;
+    width: 550px;
+    border: 2px solid #481e13;
+    border-radius: 15px;
+    box-shadow: 6px 6px 32px #592a16;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* FOOTER------------------------------------------------------------------------------------------ */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    color: white;
+    font-size: 1.33em;
+    position: relative;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: #1d0901;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
